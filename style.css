@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    background: #000;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    height: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 10px;
+    background: #ffffff;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #000;
+    font-size: 30px;
+}
+
+.nav--link+.nav--link {
+    margin-left: 18px;
+}
+
+.nav #active {
+    background: teal;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 4px;
+
+}
+
+.nav a:not(#active):hover {
+    background: #dddddd;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.pimg1 {
+    background: url("./img/img\ one.jpeg");
+    display: block;
+    min-height: 100%;
+}
+
+.pimg2 {
+    background: url("./img/img\ two.jpeg");
+    display: block;
+    min-height: 100%;
+}
+
+.pimg3 {
+    background: url("./img/img\ three.jpeg");
+    display: block;
+    min-height: 100%;
+}
+
+.pimg4 {
+    background: url("./img/img\ four.jpeg");
+    display: block;
+    min-height: 100%;
+}
+
+.pimg1, .pimg2, .pimg3, .pimg4 {
+    opacity: 0.76;
+    position: relative;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.border {
+    top: 50%;
+    width: 100%;
+    font-size: 37px;
+    color: #ffffff;
+    position: absolute;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.section-light {
+    background: #ffffff;
+    color: black;
+    padding: 40px 60px;
+    text-align: justify;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section-dark {
+    background: #000000;
+    color: #ffffff;
+    padding: 40px 60px;
+    text-align: justify;
+}
+
+@media (max-width: 600px) {
+    .nav a {
+        font-size: 20px;
+    }
+}
